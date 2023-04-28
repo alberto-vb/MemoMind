@@ -41,9 +41,12 @@ export default function FlashcardList({ cards }: FlashcardListProps) {
   return (
     <>
       <div className='card-container'>
-        <div className='arrow left' onClick={goToPreviousCard}>
-          {/* <i className='fas fa-arrow-left'></i> */}
-        </div>
+        {currentCardIndex > 0 && (
+          <div className='arrow left' onClick={goToPreviousCard}></div>
+        )}
+        {currentCardIndex == 0 && (
+          <div className='hidden-arrow' ></div>
+        )}
         <div
           className={`card ${
             flippedCardIndex === currentCardIndex ? 'flipped' : ''
@@ -62,9 +65,12 @@ export default function FlashcardList({ cards }: FlashcardListProps) {
             <div className='card-answer'>{cards[currentCardIndex]?.answer}</div>
           </div>
         </div>
-        <div className='arrow right' onClick={goToNextCard}>
-          {/* <i className='fas fa-arrow-right'></i> */}
-        </div>
+        {currentCardIndex < totalCards - 1 && (
+          <div className='arrow right' onClick={goToNextCard}></div>
+        )}
+        {currentCardIndex == totalCards - 1 && (
+          <div className='hidden-arrow' ></div>
+        )}
       </div>
     </>
   )
