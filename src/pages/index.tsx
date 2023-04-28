@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             <main className={styles.main}>
                 <div className={styles.container}>
                     <h1 className={styles.title}>
-                        Create <span className={styles.pinkSpan}>T3</span> App
+                        <span className={styles.pinkSpan}>Memo</span>Mind
                     </h1>
 
                     <AddFlashcard addFlashcard={addFlashcard}/>

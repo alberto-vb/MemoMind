@@ -34,7 +34,7 @@ export default function AddFlashcard({ addFlashcard }: AddFlashcardProp) {
 
   return (
     <>
-      <div class='w-full max-w-xs'>
+      <div className='w-full max-w-xs'>
         <div className='mb-4'>
           <label className='mb-2 block text-sm font-bold text-white'>
             Question
