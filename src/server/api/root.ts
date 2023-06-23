@@ -7,9 +7,9 @@ import { exampleRouter, listFlashcards, mutationRouter } from "~/server/api/rout
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  example: exampleRouter,
-  test: listFlashcards,
-  mutationTest: mutationRouter
+    example: exampleRouter,
+    test: listFlashcards,
+    mutationTest: mutationRouter
 });
 
 // export type definition of API

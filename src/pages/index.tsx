@@ -8,6 +8,7 @@ import AddFlashcard from "./components/AddFlashcard"
 import FlashcardList from './components/FlashcardList'
 
 import { api } from "~/utils/api";
+import FlashcardSet from "./components/FlashcardSet";
 
 interface Card {
   question: string
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
                     </h1>
 
                     <AddFlashcard addFlashcard={addFlashcard}/>
+                    <FlashcardSet />
                     <FlashcardList cards={flashcards} />
                 </div>
             </main>

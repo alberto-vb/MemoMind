@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Set1",
+        "cards": [
+            {
+                "question": "Which is the capital of France?",
+                "answer": "Paris"
+            },
+            {
+                "question": "2+2",
+                "answer": "4"
+            }
+        ]
+    },
+]
